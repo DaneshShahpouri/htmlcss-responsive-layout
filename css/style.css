@@ -73,6 +73,37 @@
 /* COMMONS */
 
 
+/* Animation */
+@keyframes img-wrapper-animation{
+    0%{
+        transform: translate(0px) scale(1);
+        box-shadow: 0 0 0 transparent;
+    }
+    5%{
+        transform: translate(0px) scale(1);
+        box-shadow: 0 0 0 transparent;
+    }
+    25%{
+        transform:rotate(0deg) translate(-15px) rotate(0deg) scale(1.05);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+    }
+    75%{
+        transform:rotate(360deg) translate(-15px) rotate(-360deg) scale(1.05);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+    }
+    90%{
+        transform: translate(0px) scale(1);
+        box-shadow: 0 0 0 transparent;
+    }
+
+    100%{
+        transform: translate(0px) scale(1);
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+/* Animation */
+
 
 /* ------------
 NAVBAR 
@@ -149,6 +180,7 @@ nav{
     gap: 10px;
     width: 400px;
 
+    box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.3);
 
     max-height: 0;
     opacity: 0;
@@ -420,6 +452,7 @@ MAIN
     background-color: rgb(129, 124, 205);
 }
 
+
 .testimonials-inner .testimonials-bottom-side .personal-card .img-wrapper{
     height: 50vw;
     width: 50vw;
@@ -428,6 +461,12 @@ MAIN
 
     border-radius: 50%;
     overflow: hidden;
+
+    transition: all .6s;
+}
+
+.testimonials-inner .testimonials-bottom-side .personal-card:hover .img-wrapper{
+    transform: scale(0.95);
 }
 
 .testimonials-inner .testimonials-bottom-side .personal-card .img-wrapper img{
@@ -553,9 +592,12 @@ MAIN
     width: 50vw;
     max-height: 300px;
     max-width: 300px;
+    position:relative;
+    top:0; left:0;
 
     border-radius: 50%;
     overflow: hidden;
+    transition:all .4s;
 }
 
 
@@ -563,18 +605,24 @@ MAIN
     height: 100%;
 }
 
-.about-us-inner .about-rightside .img-wrapper strong{
+.about-us-inner .about-rightside strong{
     position: absolute;
-    top:0; left:40%;
+    top:0; right:25%;
 
     display: block;
     color: rgb(151, 146, 228);
-    font-size: 3.6em
+    font-size: 3.6em;
+    z-index:2;
 }
 
 .about-us-inner .about-rightside p{
     color: rgb(151, 146, 228);
     font-weight: 600;
+}
+
+/* TEST ANIMATION */
+.about-us-inner:hover .about-rightside .img-wrapper{
+    animation: img-wrapper-animation 7s ease infinite;
 }
 /* FINE quinta Section -  About us */
 
@@ -822,5 +870,17 @@ footer .bottom-footer .bottom-footer-inner span a{
     
     .testimonials-inner .testimonials-top-side h3{
         font-size: 3em;  
+    }
+
+    .about-us-inner .about-leftside .text-wrapper p{
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size:1.2em
+    }
+
+    .about-us-inner .about-leftside h2{
+        font-size:3em;
+        margin-top:.2em;
+        margin-bottom:1em
     }
 }
