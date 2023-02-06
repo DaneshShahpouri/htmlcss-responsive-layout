@@ -119,7 +119,7 @@ nav{
 }
 
 .hide-check-menu .burger-menu .icon-burgermenu{
-    filter: invert(.95);
+    color: rgb(255, 255, 255);
     width: 100%;
     margin-right: 10px;
     font-size: 2em;
@@ -139,7 +139,7 @@ nav{
 
 .burgermenu-wrapper .hide-check-menu input:hover + .burger-menu .icon-burgermenu,
 .burgermenu-wrapper .hide-check-menu input:checked + .burger-menu .icon-burgermenu{
-    filter: invert(1);
+    color: white;
 }
 
 /* Checkbox burger menu */
@@ -147,6 +147,8 @@ nav{
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
+    width: 400px;
+
 
     max-height: 0;
     opacity: 0;
@@ -164,27 +166,38 @@ nav{
 }
 
 .hidden-menu li{
+    display: block;
     list-style-type: none;
     margin: 10px;
+    
+}
+
+.hidden-menu li .btn{
+    font-size: 0.8em;
+    padding: 6px 20px;
 }
 
 .hidden-menu li a{
     text-decoration: none;
-    padding: 8px 15px;
-
     color: rgb(239, 239, 239);
+    display: block;
+    height: 100%;
 }
 
 .hidden-menu li a:hover{
     color: white;
-    background-color: rgb(1, 104, 200);
-    border-radius: 10px;
+    background-color: rgb(2, 113, 218);
+   
 }
 
 .burgermenu-wrapper .hide-check-menu input:checked + .burger-menu .hidden-menu{
-    max-height: 300px;
+    max-height: 360px;
     opacity: 1;
 } 
+
+.burgermenu-wrapper .hide-check-menu:active .burger-menu .icon-burgermenu i{
+    color: rgb(99, 180, 255);
+}
 /* Checkbox burger menu */
 
 
@@ -396,6 +409,15 @@ MAIN
     border-radius: 30px;
 
     color: white;
+    box-shadow: 0 3px 5px transparent;
+    transform: scale(0.99);
+    transition: all 0.4s;
+}
+
+.testimonials-inner .testimonials-bottom-side .personal-card:hover{
+    transform: scale(1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(129, 124, 205);
 }
 
 .testimonials-inner .testimonials-bottom-side .personal-card .img-wrapper{
@@ -462,8 +484,9 @@ MAIN
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    box-shadow: 0 3px 5px transparent;
 
-    transition: opacity .5s;
+    transition: all .4s;
 }
 
 /* Prova Hover */
@@ -473,6 +496,8 @@ MAIN
 
 .benefits-inner .card-wrapper:hover .card:hover{
     opacity: 1;
+    transform: scale(1.02);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 /* fine Prova Hover */
 
@@ -740,7 +765,7 @@ footer .bottom-footer .bottom-footer-inner span a{
     .btn{
         font-size: .8em;
     }
-    
+
     .hide-check-menu .burger-menu {
         display: none;
     }
