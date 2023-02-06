@@ -4,25 +4,55 @@
     box-sizing: border-box;
 }  
 
+.center{
+    margin:0 20px;
+}
 
 .btn{
     padding: 6px 20px;
     border: 1px solid transparent;
     border-radius: 15px;
-    background-color: white;
+    
     cursor: pointer;
+    box-shadow: 0 0 5px transparent;
 }
 
 .btn:hover{
-    padding: 4px 10px;
-    border: 1px solid rgb(32, 147, 255);;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-primary{
+    background-color: white;
+    color: black;
+}
+
+.btn-primary:hover{
+    border: 1px solid rgb(32, 147, 255);
     border-radius: 15px;
     background-color: rgb(231, 231, 231);
+}
+
+.btn-primary:active{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    background-color: rgb(189, 189, 189);
+    transform: scale(.98);
 }
 
 .btn-secondary{
     background-color: rgb(2, 133, 253);
     color: white;
+}
+
+.btn-secondary:hover{
+    background-color: rgb(0, 103, 199);
+    color: white;
+}
+
+.btn-secondary:active{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    background-color: rgb(0, 69, 133);
+    transform: scale(.98);
 }
 /* COMMONS */
 
@@ -149,10 +179,11 @@ fine NAVBAR
 MAIN
 -------------*/
 
+
 /* Prima Section - get a demo */
 .getdemo-section {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top:30px;
+    margin-bottom:30px;
 }
 
 .getdemo-section .cards-wrapper{
@@ -217,6 +248,154 @@ MAIN
 }
 /* FINE Prima Section - get a demo */
 
+
+/* Seconda Section -  planning */
+.strategic-planning{
+    background-color: rgb(151, 146, 228);
+}
+
+.strategic-planning .strategic-planning-inner{
+    display: flex;
+    flex-direction: column;
+    padding:50px 0px;
+}
+
+.strategic-planning .strategic-planning-inner .planning-top-side{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    color: white;
+    margin-bottom: 30px;
+}
+
+.strategic-planning .strategic-planning-inner .planning-bottom-side{
+    background-color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 30px;
+}
+
+.strategic-planning .strategic-planning-inner img{
+    width: 100%;
+}
+
+.strategic-planning .strategic-planning-inner .btn-arrow{
+    background-color:rgb(151, 146, 228);
+    padding: 20px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.strategic-planning .strategic-planning-inner .btn-arrow i{
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all.4s
+}
+
+.strategic-planning .strategic-planning-inner .btn-arrow:hover i{
+    color: white;
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+}
+
+.strategic-planning .strategic-planning-inner .btn-arrow:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.strategic-planning .strategic-planning-inner .btn-arrow:active{
+    background-color:rgb(119, 113, 203);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+/* FINE Seconda Section -  planning */
+
+/* Terza Section -  testimonials */
+.testimonials{
+    margin: 40px 0;
+}
+
+.testimonials-inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-inner .testimonials-top-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    margin: 20px 0;
+}
+
+.testimonials-inner .testimonials-top-side h2{
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.testimonials-inner .testimonials-top-side h3{
+    color:rgb(151, 146, 228);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.testimonials-inner .testimonials-top-side p{
+    text-align: center;
+}
+
+.testimonials-inner .testimonials-bottom-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.testimonials-inner .testimonials-bottom-side .personal-card{
+    background-color: rgb(151, 146, 228);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    padding: 20px;
+    border-radius: 30px;
+
+    color: white;
+}
+
+.testimonials-inner .testimonials-bottom-side .personal-card .img-wrapper{
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials-inner .testimonials-bottom-side .personal-card .img-wrapper img{
+    height: 100%;
+    transform: translateX(-15%);
+}
+
+.testimonials-inner .testimonials-bottom-side .personal-card:nth-of-type(2) .img-wrapper img{
+    transform: translateX(-18%);
+}
+
+.testimonials-inner .testimonials-bottom-side .personal-card p{
+    font-size: .9em;
+}
+
+/* FINE Terza Section -  testimonials */
 
 
 /* ------------
