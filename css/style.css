@@ -609,7 +609,7 @@ MAIN
 
 .about-us-inner .about-rightside strong{
     position: absolute;
-    top:0; right:25%;
+    top:0; left:40%;
 
     display: block;
     color: rgb(151, 146, 228);
@@ -804,7 +804,7 @@ footer .bottom-footer .bottom-footer-inner span a{
         width: 30vw;
     }
 
-    .about-us-inner .about-rightside .img-wrapper strong{
+    .about-us-inner .about-rightside strong{
         left:57%;
         font-size: 3.6em
     }
