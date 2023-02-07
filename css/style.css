@@ -846,6 +846,23 @@ footer .bottom-footer .bottom-footer-inner span a{
         margin-bottom:30px;
     }
 
+    .getdemo-section .cards-wrapper .first-card{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .getdemo-section .cards-wrapper .first-card .card-text-wrapper{
+        width:calc(50% - 10px)
+    }
+
+    .getdemo-section .cards-wrapper .first-card .img-wrapper{
+        width:calc(50% - 10px)
+    }
+
+    .getdemo-section .cards-wrapper .first-card .img-wrapper img{
+        width: 80%;
+    }
+
     /* Section two */
     .strategic-planning .strategic-planning-inner{
         display: flex;
