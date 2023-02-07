@@ -852,7 +852,14 @@ footer .bottom-footer .bottom-footer-inner span a{
     }
 
     .getdemo-section .cards-wrapper .first-card .card-text-wrapper{
-        width:calc(50% - 10px)
+        width:calc(50% - 10px);
+        height: 100%;
+        justify-content: space-around;
+        margin:0 30px;
+        padding:20px 0
+    }
+    .getdemo-section .cards-wrapper .first-card .card-text-wrapper h2{
+        font-size: 1.5em;
     }
 
     .getdemo-section .cards-wrapper .first-card .img-wrapper{
